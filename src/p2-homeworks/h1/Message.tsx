@@ -1,4 +1,5 @@
 import React from 'react'
+import s from './Message.module.css'
 
 type MessageType = {
     avatar: string,
@@ -7,12 +8,11 @@ type MessageType = {
     time: string
 }
 
-
 const  Message: React.FC<MessageType> = (props) => {
     return (
-        <div>
+            <div className={s.item}>
 
-        </div>
+            </div>
     )
 }
 
