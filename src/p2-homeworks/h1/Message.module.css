@@ -13,7 +13,6 @@
     height: 65px;
     margin: 70px 0 0 0px;
     border-radius: 30px;
-    order: 1;
 }
 
 .containerForMessage {
@@ -22,22 +21,28 @@
     height: 120px;
     background-color: #186203;
     border-radius: 5px;
-    order: 2;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
 .name {
+    font-size: 25px;
     font-weight: bold;
     padding-left: 10px;
-    color: #c06cda;
+    color: #cd7de7;
 }
 
 .message {
-
+    font-size: 18px;
+    color: #faf4f4;
+    padding-left: 10px;
 }
 
 .time {
-
+    display: flex;
+    justify-content: end;
+    color: #60b649;
+    font-size: 18px;
+    padding-right: 10px;
 }
