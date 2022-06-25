@@ -1,4 +1,3 @@
-
 .container {
     display: flex;
     flex-direction: row;
@@ -11,9 +10,16 @@
 .avatar {
     width: 65px;
     height: 65px;
-    margin: 70px 0 0 0px;
+    margin: 70px 0 0 5px;
     border-radius: 30px;
 }
+
+.triangle {
+    border-bottom: 20px solid #186203FF;
+    border-left: 40px solid transparent;
+    margin: 0 -25px 15px 0;
+}
+
 
 .containerForMessage {
     align-self: center;
@@ -38,6 +44,7 @@
     color: #faf4f4;
     padding-left: 10px;
 }
+
 
 .time {
     display: flex;

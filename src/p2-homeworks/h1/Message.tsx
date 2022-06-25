@@ -14,6 +14,7 @@ const Message: React.FC<MessageType> = (props) => {
             <div>
                 <img className={s.avatar} src={props.avatar} alt=""/>
             </div>
+            <div className={s.triangle}></div>
             <div className={s.containerForMessage}>
                 <div className={s.name}>
                     {props.name}
