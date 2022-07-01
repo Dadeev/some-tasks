@@ -10,17 +10,20 @@
 .avatar {
     width: 50px;
     height: 50px;
-    border-radius: 30px;
+    border-radius: 50%;
+    padding: 0 0 5px 5px;
 }
 
 .angle {
     width: 15px;
     height: 15px;
     background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 15px, #6dbd54 0);
+    margin-bottom: 5px;
 }
 
 .content {
     padding: 10px;
+    margin-bottom: 5px;
     border-radius: 5px 5px 5px 0;
     background-color: #6dbd54;
 }
