@@ -1,8 +1,8 @@
 import React from 'react'
+import {AffairType} from "./HW2";
 
 type AffairPropsType = {
-    // key не нужно типизировать
-    affair: any // need to fix any
+    affair: AffairType
     deleteAffairCallback: any // need to fix any
 }
 
