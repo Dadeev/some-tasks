@@ -3,17 +3,18 @@ import {AffairType} from "./HW2";
 
 type AffairPropsType = {
     affair: AffairType
-    deleteAffairCallback: any // need to fix any
+    deleteAffairCallback: (_id: number) => void
 }
 
 function Affair(props: AffairPropsType) {
-    const deleteCallback = () => {}// need to fix
+    const deleteCallback = (_id: number) => {
+     props.deleteAffairCallback(_id)
+    }
 
     return (
         <div>
-            // show some text
-
-            <button onClick={deleteCallback}>X</button>
+            <button onClick={() =>deleteCallback(props.affair._id)}>X</button>
+            {props.affair.name}
         </div>
     )
 }
