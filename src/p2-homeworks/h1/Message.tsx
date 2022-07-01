@@ -11,20 +11,14 @@ type MessageType = {
 const Message: React.FC<MessageType> = (props) => {
     return (
         <div className={s.container}>
-            <div>
-                <img className={s.avatar} src={props.avatar} alt=""/>
-            </div>
-            <div className={s.triangle}></div>
-            <div className={s.containerForMessage}>
-                <div className={s.name}>
-                    {props.name}
-                </div>
-                <div className={s.message}>
-                    {props.message}
-                </div>
-                <div className={s.time}>
-                    {props.time}
-                </div>
+            <img src={props.avatar} alt="avatar" className={s.avatar}/>
+
+            <div className={s.angle}/>
+
+            <div className={s.content}>
+                <div className={s.name}>{props.name}</div>
+                <div className={s.text}>{props.message}</div>
+                <div className={s.time}>{props.time}</div>
             </div>
         </div>
     )

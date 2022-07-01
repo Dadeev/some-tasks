@@ -1,55 +1,44 @@
 .container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 350px;
-    height: 150px;
-    background-color: #9cce8d;
+    align-items: flex-end;
+    margin: 10px;
+    width: 245px;
+    height: 100px;
+    background-color: #0e6e2f;
 }
 
 .avatar {
-    width: 65px;
-    height: 65px;
-    margin: 70px 0 0 5px;
+    width: 50px;
+    height: 50px;
     border-radius: 30px;
 }
 
-.triangle {
-    border-bottom: 20px solid #186203FF;
-    border-left: 40px solid transparent;
-    margin: 0 -25px 15px 0;
+.angle {
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 15px, #6dbd54 0);
 }
 
-
-.containerForMessage {
-    align-self: center;
-    width: 240px;
-    height: 120px;
-    background-color: #186203;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.content {
+    padding: 10px;
+    border-radius: 5px 5px 5px 0;
+    background-color: #6dbd54;
 }
 
 .name {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
-    padding-left: 10px;
-    color: #cd7de7;
+    color: #f89ad4;
 }
 
-.message {
-    font-size: 18px;
-    color: #faf4f4;
-    padding-left: 10px;
+.text {
+    min-width: 150px;
+    max-width: 300px;
+    word-wrap: break-word;
 }
-
 
 .time {
     display: flex;
-    justify-content: end;
-    color: #60b649;
-    font-size: 18px;
-    padding-right: 10px;
+    justify-content: flex-end;
+    color: #37562a;
 }
