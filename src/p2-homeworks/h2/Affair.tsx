@@ -8,12 +8,12 @@ type AffairPropsType = {
 
 function Affair(props: AffairPropsType) {
     const deleteCallback = (_id: number) => {
-     props.deleteAffairCallback(_id)
+        props.deleteAffairCallback(_id)
     }
 
     return (
         <div>
-            <button onClick={() =>deleteCallback(props.affair._id)}>X</button>
+            <button onClick={() => deleteCallback(props.affair._id)}>X</button>
             {props.affair.name}
         </div>
     )

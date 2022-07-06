@@ -25,9 +25,9 @@ export const filterAffairs = (affairs: AffairType[], filter: FilterType): Affair
     if (filter === 'all') return affairs
     else return affairs.filter((el) => el.priority == filter)
 }
- export const deleteAffair = (affairs: AffairType[], _id: number): AffairType[] => {
-     return affairs.filter((el) => el._id !== _id)
- }
+export const deleteAffair = (affairs: AffairType[], _id: number): AffairType[] => {
+    return affairs.filter((el) => el._id !== _id)
+}
 
 function HW2() {
     const [affairs, setAffairs] = useState<AffairType[]>(defaultAffairs)
