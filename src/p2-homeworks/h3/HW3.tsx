@@ -12,21 +12,12 @@ export type UserType = {
 function HW3() {
     const [users, setUsers] = useState<UserType[]>([])
 
-    const addUserCallback = (name: string) => {
+    const addUserCallBack = (name: string) => {
         setUsers([{_id: v1(), name: name}, ...users])
     }
-
     return (
         <div>
-            <hr/>
-            homeworks 3
-
-            <GreetingContainer users={users} addUserCallback={addUserCallback}/>
-
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeGreeting/>*/}
-            <hr/>
+           <GreetingContainer users={users} addUserCallback={addUserCallBack}/>
         </div>
     )
 }

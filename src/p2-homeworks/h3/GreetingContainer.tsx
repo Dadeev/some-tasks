@@ -22,9 +22,13 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
 
     }
     const addUser = () => {
-        alert(`Hello ${name}!`)
-        addUserCallback(name)
-        setName('')
+        if (error) {
+            return;
+        } else {
+            alert(`Hello ${name}!`)
+            addUserCallback(name)
+            setName('')
+        }
     }
 
     const totalUsers = users.length
