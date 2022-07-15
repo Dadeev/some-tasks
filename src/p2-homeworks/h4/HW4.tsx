@@ -26,8 +26,8 @@ function HW4() {
 
             <div className={s.column}>
                 <SuperInputText
-                    value={text}
                     onChangeText={setText}
+                    value={text}
                     onEnter={showAlert}
                     error={error}
                     // spanClassName={s.testSpanError}
