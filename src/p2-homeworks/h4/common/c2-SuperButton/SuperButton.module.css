@@ -1,7 +1,43 @@
-.default {
+@keyframes blink {
+    0% {
+        letf: -130%
+    }
+    100% {
+        left: 130%
+    }
+}
 
+.default {
+    background-color: #f1e9fa;
+    border: 2px solid #dddce0;
 }
 
 .red {
-    background: red;
+    background: #f50505;
+    border: 2px solid #c20606;
+}
+
+.button {
+    position: relative;
+    margin: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.button::after{
+    display: block;
+    content: '';
+    position: absolute;
+
+    left: -130%;
+    top: 0;
+    height: 100%;
+    width: 20%;
+
+    transform: skew(45deg);
+
+    background-color: #faf4f4;
+    opacity: 0.7;
+}
+.button:hover::after{
+    animation: blink 0.35s ease;
 }
