@@ -1,0 +1,27 @@
+/*.cub {*/
+/*    margin: 10px;*/
+/*    width: 25px;*/
+/*    height: 25px;*/
+/*    background: #48ee7e;*/
+/*    border: 2px solid #3cbd66;*/
+/*}*/
+
+/*.link {*/
+/*    text-decoration: none;*/
+/*    color: #0e6e2f;*/
+/*    margin: 10px;*/
+/*}*/
+/*.link:hover {*/
+/*    color: #ae70c4;*/
+/*}*/
+
+/*.header {*/
+/*    display: flex;*/
+/*    width: 280px;*/
+/*    transition-duration: 500ms;*/
+/*    transform: translate(-220px);*/
+/*}*/
+/*.header:hover {*/
+/*    transition-duration: 500ms;*/
+/*    transform: translate(0);*/
+/*}*/
