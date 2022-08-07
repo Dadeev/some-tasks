@@ -8,7 +8,6 @@ function HW7() {
     const [value, onChangeOption] = useState<string>(arr[0])
 
     const changeOption = (value: string)=> {
-        debugger
         onChangeOption(value)
     }
 
