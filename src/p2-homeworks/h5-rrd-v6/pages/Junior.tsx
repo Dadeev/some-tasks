@@ -1,9 +1,10 @@
 import React from 'react';
+import HW9 from "../../h9/HW9";
 
 export const Junior = () => {
     return (
         <div>
-            Junior
+            <HW9/>
         </div>
     );
 };
