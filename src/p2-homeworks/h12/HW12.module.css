@@ -14,10 +14,18 @@
     color: aqua;
 }
 
-.some {
+.green {
     background: lightgreen;
 }
 
-.some-text {
+.purple {
+    background: #cd7de7;
+}
+
+.blue {
+    background: #2a89d5;
+}
+
+.green-text {
     color: darkslateblue;
 }
