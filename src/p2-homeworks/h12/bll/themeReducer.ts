@@ -1,8 +1,8 @@
 export type ThemeType = 'dark' | 'red' | 'green' | 'purple' | 'blue'
-type initState = { theme: ThemeType };
-const initState: initState = {theme: 'dark'};
+type initStateType = { theme: ThemeType };
+const initState: initStateType = {theme: 'dark'};
 
-export const themeReducer = (state = initState, action: changeThemeCType): initState => {
+export const themeReducer = (state = initState, action: changeThemeCType): initStateType => {
     switch (action.type) {
         case "CHANGE-THEME": {
             return {...state, theme: action.theme};
